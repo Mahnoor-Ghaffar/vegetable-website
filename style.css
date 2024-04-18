@@ -28,6 +28,7 @@ label.logo{
 nav ul{
 	float: right;
 	list-style-type: none;
+    z-index: 3;
 }
 nav ul li{
 	display: inline-block;
@@ -266,99 +267,7 @@ color: #ECAD15;
 
 }
 
-/* -----------------------------------cbg-------------------------------- */
-.cabbage{
-    width: 100%;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.cbgimg{
- align-self: center;
- margin-top: 50px;
-}
-.cbgtext{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-}
-.cbgp{
-    font-family: Poppins;
-    font-size: 16.28px;
-    font-weight: 300;
-    line-height: 24px;
-    text-align: left;
-    color: #050505;
-    align-self: center;
-}
-/* ------------------------------------------------------------- *//* -----------------------------------cbg-------------------------------- */
-.cabbage{
-    width: 100%;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.cbgimg{
- align-self: center;
- margin-top: 50px;
-}
-.cbgtext{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.cbgp{
-    font-family: Poppins;
-    font-size: 16.28px;
-    font-weight: 300;
-    line-height: 24px;
-    text-align: left;
-    color: #050505;
-    align-self: center;
-}
-.cbg-btn{
-    margin-top: 30px;
-}
-/* ------------------------------------------------------------- *//* -----------------------------------cbg-------------------------------- */
-.cabbage{
-    width: 100%;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.cbgimg{
- align-self: center;
- margin-top: 50px;
-}
-.cbgtext{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-}
-.cbgp{
-    font-family: Poppins;
-    font-size: 16.28px;
-    font-weight: 300;
-    line-height: 24px;
-    text-align: left;
-    color: #050505;
-    align-self: center;
-}
-/* ------------------------------------------------------------- */
+
 /* -----------------------------------cbg-------------------------------- */
 .cabbage{
     width: 100%;
@@ -390,13 +299,16 @@ color: #ECAD15;
 }
 .cbg-btn{
     margin-top: 30px;
+}
+.us{
+    height: 350px;
 }
 /* ------------------------------------------------------------- */
 
 /* --------------------------cards--------------------------------- */
 
 .cards{
-    width: 98vw;
+    width: 98%;
     padding: 2em;
     display: flex;
     flex-wrap: wrap;
@@ -512,7 +424,7 @@ color: #ECAD15;
     height: 150px;
 }
 footer{
-    background-color: #000000 !important;
+    background-color: #000000;
 }
 .footer-cp{
     display: flex;
@@ -524,7 +436,48 @@ footer{
 .cp{
     font-size: 16px;
 }
-
+footer{
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    align-items: center;
+    height: 300px;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+input{
+    outline: none;
+    position: relative;
+    left: 10px;
+}
+.ft-box{
+    height: 100px;
+    color: white;
+}
+.fa{
+    color: white;
+    margin-right: 10px;
+}
+form{
+    height: 40px;
+    width: 250px;
+    background-color: white;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+}
+.subs{
+    margin: 15px;
+    height: 35px;
+    width: 100px;
+    border-radius: 50px;
+}
+.search-box{
+    width: 40%;
+}
 @media(max-width: 1242px) {
     .overly{
         display: none;
@@ -558,12 +511,14 @@ header{
 		top:80px;
 		left: -100%;
 		transition: .5s;
+        z-index: 3;
 	}
 	nav ul li{
 		display: block;
 		text-align: center;
 		line-height:50px;
 		margin:15px;
+        z-index: 100;
 	}
     header{
         display: none;
@@ -849,37 +804,31 @@ header{
     bottom: 20px;
 }
 .about-us-h{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .cbgp{
     font-size: 14px;
 }
-.contact-sec{
-    position: relative;
-    bottom: 150px;
-}
-.manga{
-    position: relative;
-    bottom: 300px;
-}
 .text-last{
-    position: relative;
-    bottom: 200px;
-    font-size: 14px;
+    font-size: 10px;
 }
-section{
-    position: relative;
-    bottom: 150px;
+.contact-2{
+    height: 650px;
+}
+.contact-text{
+position: relative;
+top: 50px;
 }
 footer{
-    position: relative;
-    bottom: 150px;
-}
-.footer-cp{
-    position: relative;
-    bottom: 150px;
-}
-.cards{
-    margin-top: 30px;
-}
+    /* position: relative;
+    bottom: 150px; */
+    flex-direction: column;
+    height: 500px;
+    }
+    .search-box{
+        margin-right: 180px;
+    }
+    .cards{
+        margin-top: 30px;
+    }
 }
